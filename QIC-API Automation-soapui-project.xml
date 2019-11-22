@@ -1,0 +1,243 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<con:soapui-project id="835e8154-53a3-49d6-917f-03e68935e569" activeEnvironment="Default" name="QIC-API Automation" soapui-version="5.4.0" abortOnError="false" runType="SEQUENTIAL" resourceRoot="" xmlns:con="http://eviware.com/soapui/config"><con:settings/><con:interface xsi:type="con:RestService" id="12d75743-d5e3-4ac3-9766-50b8ead1a1fa" wadlVersion="http://wadl.dev.java.net/2009/02" name="https://api-test1.test.intranet" type="rest" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:settings/><con:endpoints><con:endpoint>https://api-test1.test.intranet</con:endpoint></con:endpoints><con:resource name="Smoke_Test" path="" id="0fc29327-0d14-4123-84f8-00f30c57d98d"><con:settings/><con:parameters/><con:method name="Smoke_Test" id="d75b5f05-0215-40fc-a6a7-fc2b851ddf25" method="POST"><con:settings><con:setting id="RecordResponseRepresentations">true</con:setting></con:settings><con:parameters/><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/json</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>application/json</con:mediaType><con:status>404</con:status><con:params/><con:element xmlns:get="https://api-test1.test.intranet/Application/v2/Amptweb/getOrderStatus">get:Fault</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType>application/octet-stream</con:mediaType><con:status>200</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:representation type="FAULT"><con:mediaType>text/html;charset=utf-8</con:mediaType><con:status>415 400</con:status><con:params/><con:element>html</con:element></con:representation><con:representation type="REQUEST"><con:mediaType>application/JSON</con:mediaType><con:params/></con:representation><con:representation type="RESPONSE"><con:mediaType xsi:nil="true"/><con:status>0</con:status><con:params/><con:element>data</con:element></con:representation><con:request name="Request 1" id="921498c7-b35c-408b-ab82-c2361b7446e8" mediaType="application/json" postQueryString="false" multiValueDelimiter=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Content-Type" value="application/JSON; charset=UTF-8" xmlns="http://eviware.com/soapui/config"/></con:setting><con:setting id="com.eviware.soapui.settings.CommonSettings@entitizeProperties">false</con:setting><con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@max-size">0</con:setting><con:setting id="AutoInferSchemas">false</con:setting></con:settings><con:endpoint/><con:request>{"payLoad":{"REQUEST":{"PROCESS_NM":"GetOrderStatus"},"ITEMS":{"0":{"SALES_ID":"BDES"}}}}</con:request><con:originalUri>https://api-test1.test.intranet/Application/v2/Amptweb/getOrderStatus</con:originalUri><con:credentials><con:username>ESLCXG7</con:username><con:password>S6ztUR&amp;QrTeT9lJ*o'L?</con:password><con:domain/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request><con:request name="Copy of Request 1" id="921498c7-b35c-408b-ab82-c2361b7446e8" mediaType="application/json" postQueryString="false" multiValueDelimiter=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Content-Type" value="application/JSON; charset=UTF-8" xmlns="http://eviware.com/soapui/config"/></con:setting><con:setting id="com.eviware.soapui.settings.CommonSettings@entitizeProperties">false</con:setting><con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@max-size">0</con:setting><con:setting id="AutoInferSchemas">false</con:setting></con:settings><con:endpoint>https://api-test1.test.intranet</con:endpoint><con:request>{"payLoad":{"REQUEST":{"PROCESS_NM":"GetSalesAgent"},"ITEMS":{"0":{"SALES_ID":"B4F9"}}}}</con:request><con:originalUri>https://api-test1.test.intranet/Application/v2/Amptweb/getOrderStatus</con:originalUri><con:credentials><con:username>ESLCXG7</con:username><con:password>S6ztUR&amp;QrTeT9lJ*o'L?</con:password><con:domain/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:request></con:method></con:resource><con:inferredSchema><![CDATA[<?xml version="1.0" encoding="UTF-8"?>
+<inf:schema xmlns:inf="http://www.eviware.com/soapui/InferredSchema"><inf:namespace>https://api-test1.test.intranet</inf:namespace><inf:particle xsi:type="inf:ElementParticle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><inf:name>data</inf:name><inf:type xsi:type="inf:TypeReference"><inf:reference xmlns:api="https://api-test1.test.intranet">api:_data</inf:reference></inf:type></inf:particle><inf:prefix key="http://www.w3.org/2001/XMLSchema" value="xs"/><inf:complexType><inf:completed>true</inf:completed><inf:mixed>false</inf:mixed><inf:name>_data</inf:name><inf:attribute xsi:type="inf:AttributeParticle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><inf:name>contentLength</inf:name><inf:type xsi:type="inf:SimpleType"><inf:completed>false</inf:completed><inf:typeName>boolean</inf:typeName></inf:type></inf:attribute><inf:attribute xsi:type="inf:AttributeParticle" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><inf:name>contentType</inf:name><inf:type xsi:type="inf:SimpleType"><inf:completed>false</inf:completed><inf:typeName>string</inf:typeName></inf:type></inf:attribute><inf:content xsi:type="inf:EmptyContent" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><inf:completed>true</inf:completed></inf:content></inf:complexType></inf:schema>]]></con:inferredSchema></con:interface><con:testSuite id="b929eabb-50d8-4e45-9f47-ae410448628b" name="QIC-API AutomationTestSuite"><con:description>TestSuite generated for REST Service [https://api-test1.test.intranet]</con:description><con:settings/><con:runType>SEQUENTIAL</con:runType><con:testCase id="d1ea2c06-b2b2-4465-b00d-068d9dc8e462" failOnError="true" failTestCaseOnErrors="true" keepSession="false" maxResults="0" name="QIC-API AutomationTestCase" searchProperties="true"><con:description>TestCase generated for REST Resource [GetOrderStatus] located at [/Application/v2/Amptweb/getOrderStatus]</con:description><con:settings/><con:testStep type="groovy" name="serverConfig" id="87ccb6e1-8478-4296-8975-f52d26a95870"><con:settings/><con:config><script>import java.*;
+import jxl.*;
+import jxl.write.*;
+
+log.info "Automation Testing started"
+log.info "Inside server configuration"
+def groovyUtils= new  com.eviware.soapui.support.GroovyUtils(context)
+def projectPath = groovyUtils.projectPath
+log.info "projectPath::"+projectPath
+
+def serviceName = testRunner.testCase.getPropertyValue( "Service_Name" )
+def environment = testRunner.testCase.getPropertyValue( "Environment" )
+
+log.info "Loading input data from excel"
+Workbook workbook = Workbook.getWorkbook(new File(projectPath+"\\"+serviceName+"_Input.xls" )) 
+context["workbook"]=workbook
+
+log.info "Reading data from server configuration sheet"
+Sheet serverSheet = workbook.getSheet("serverConfiguration") 
+
+def endpoint;
+if(serverSheet.getRows() == 1){
+  testRunner.cancel("Server configuration sheet is empty!!!!!")
+}
+else{
+	
+	for(int i = 1; i&lt;serverSheet.getRows();i++){
+		
+		if((serverSheet.getCell(1,i).getContents().toString().toLowerCase() == environment.toLowerCase()) 
+		&amp;&amp; (serverSheet.getCell(2,i).getContents().toString().toLowerCase()== serviceName.toLowerCase())){
+			
+			endpoint = serverSheet.getCell(3,i).getContents().toString()+serverSheet.getCell(4,i).getContents().toString()
+			break;
+			
+		}
+		else{
+			endpoint = null;
+		}
+		
+	}
+}
+if(endpoint == null){
+	testRunner.cancel(environment+" environment and "+serviceName+" serviceName details are not matching. Please update Input sheet.")
+}
+else{
+	context.setProperty("endPoint",endpoint)
+	log.info "EndPointURL::"+endpoint
+}
+
+//Intializing the counter
+context["i"]=1
+
+
+//creating the output sheet 
+WritableWorkbook writableWorkbook = Workbook.createWorkbook(new File(projectPath+"\\"+serviceName+"_Output.xls"))
+WritableSheet writableSheet= writableWorkbook.createSheet("Results",0)
+	
+Label TestCase = new Label(0,0,"TC_ID");
+writableSheet.addCell(TestCase);
+
+Label Scenario = new Label(1,0,"Scenario");
+writableSheet.addCell(Scenario);
+
+Label ValidatingNode = new Label(2,0,"ValidatingNode");
+writableSheet.addCell(ValidatingNode);
+
+Label Actual = new Label(3,0,"ActualValue");
+writableSheet.addCell(Actual);
+
+Label Expected = new Label(4,0,"ExpectedValue");
+writableSheet.addCell(Expected);
+
+Label Status = new Label(5,0,"Status");
+writableSheet.addCell(Status);
+
+context["Outputdata"]=writableSheet 
+
+writableWorkbook.write()
+writableWorkbook.close()</script></con:config></con:testStep><con:testStep type="groovy" name="reqConfig" id="4f46402d-49cb-4e6e-8043-298ef1c4f5b0"><con:settings/><con:config><script>import java.*;
+import jxl.*;
+
+log.info "Inside request configuration"
+log.info "reading data from request configuration sheet."
+
+Sheet requestSheet = context["workbook"].getSheet("requestConfiguration") 
+
+def counter=context["i"] 
+
+context["tc_ID"] = requestSheet.getCell(0,counter).getContents().toString()
+context["scenario"]  = requestSheet.getCell(1,counter).getContents().toString()
+
+context.setProperty("PROCESS_NM",requestSheet.getCell(2,counter).getContents().toString())
+
+context["fileSize"] = requestSheet.getRows()
+
+if(context["fileSize"] == 1){
+  testRunner.cancel("Request configuration sheet is empty!!!!!")
+}
+else{
+
+	StringBuilder sb = new StringBuilder();
+
+	for(int j=3;j&lt;requestSheet.getColumns();j++){		
+		if(!requestSheet.getCell(j,counter).getContents().toString().isEmpty()){
+			sb.append(requestSheet.getCell(j,0).getContents().toString()+'" : "'+requestSheet.getCell(j,counter).getContents().toString()+",");			
+		}		
+	}
+	
+	context.setProperty("ITEMS",sb.toString().substring(0,sb.toString().length()-1))
+}
+context["i"]=counter+1</script></con:config></con:testStep><con:testStep type="restrequest" name="Request 1" id="5d462a2f-3798-4b2b-a41c-6759537f8224"><con:settings/><con:config service="https://api-test1.test.intranet" resourcePath="" methodName="Smoke_Test" xsi:type="con:RestRequestStep" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"><con:restRequest name="Request 1" id="921498c7-b35c-408b-ab82-c2361b7446e8" mediaType="application/json" postQueryString="false" multiValueDelimiter=""><con:settings><con:setting id="com.eviware.soapui.impl.wsdl.WsdlRequest@request-headers">&lt;entry key="Content-Type" value="application/JSON; charset=UTF-8" xmlns="http://eviware.com/soapui/config"/></con:setting><con:setting id="com.eviware.soapui.settings.CommonSettings@entitizeProperties">false</con:setting><con:setting id="com.eviware.soapui.impl.support.AbstractHttpRequest@max-size">0</con:setting><con:setting id="AutoInferSchemas">false</con:setting></con:settings><con:endpoint>${endPoint}</con:endpoint><con:request>{
+    "payLoad": {
+        "REQUEST": {
+            "PROCESS_NM": "${PROCESS_NM}"
+        },
+        "ITEMS": {
+            "0": {
+                "${ITEMS}"
+            }
+        }
+    }
+}
+</con:request><con:originalUri>https://api-test1.test.intranet/Application/v2/Amptweb/getOrderStatus</con:originalUri><con:credentials><con:username>ESLCXG7</con:username><con:password>S6ztUR&amp;QrTeT9lJ*o'L?</con:password><con:domain/><con:selectedAuthProfile>Basic</con:selectedAuthProfile><con:addedBasicAuthenticationTypes>Basic</con:addedBasicAuthenticationTypes><con:preemptive>true</con:preemptive><con:authType>Preemptive</con:authType></con:credentials><con:jmsConfig JMSDeliveryMode="PERSISTENT"/><con:jmsPropertyConfig/><con:parameters/><con:parameterOrder/></con:restRequest></con:config></con:testStep><con:testStep type="groovy" name="Assertions" id="589c0909-23ed-45a3-8dd6-3ebe0350ff56"><con:settings/><con:config><script>import java.*;
+import jxl.*;
+import com.jayway.jsonpath.JsonPath;
+import jxl.write.*;
+
+
+def response = testRunner.testCase.getTestStepByName("Request 1").getPropertyValue("response")
+
+Sheet validationSheet = context["workbook"].getSheet("validation");
+
+for(int i = 1; i&lt;validationSheet.getRows();i++){
+	
+	if(context["tc_ID"] == validationSheet.getCell(0,i).getContents().toString()){
+		
+		context["Validating node"] = validationSheet.getCell(1,i).getContents().toString()
+		context["Jpath"] = validationSheet.getCell(2,i).getContents().toString()
+		context["Expected value"] = validationSheet.getCell(3,i).getContents().toString()
+
+		Jpath = "\$."+context["Jpath"]
+	
+		context["Actualvalue"] = JsonPath.read(response,Jpath).toString()
+
+		if(context["Actualvalue"].equals(context["Expected value"])){
+
+			context["Status"] = "PASS"
+		}
+		else{
+			context["Status"] = "FAIL"
+		}
+		
+		Label TestCase = new Label(0,i,context["tc_ID"]);
+		context["Outputdata"].addCell(TestCase);
+
+		Label Scenario = new Label(1,i,context["scenario"]);
+		context["Outputdata"].addCell(Scenario);
+
+		Label ValidatingNode = new Label(2,i,context["Validating node"]);
+		context["Outputdata"].addCell(ValidatingNode);
+
+		Label Actual = new Label(3,i,context["Actualvalue"]);
+		context["Outputdata"].addCell(Actual);
+
+		Label Expected = new Label(4,i,context["Expected value"]);
+		context["Outputdata"].addCell(Expected);
+
+		Label Status = new Label(5,i,context["Status"]);
+		context["Outputdata"].addCell(Status);
+
+	}
+}
+
+</script></con:config></con:testStep><con:testStep type="groovy" name="Reporting" id="34838e64-e85b-4f59-a738-6f0de3f6a808"><con:settings/><con:config><script><![CDATA[import java.*; 
+import jxl.*;
+import jxl.write.*;
+
+def groovyUtils=new  com.eviware.soapui.support.GroovyUtils(context)
+def projectPath = groovyUtils.projectPath
+
+def i=context["i"]
+
+def serviceName = testRunner.testCase.getPropertyValue( "Service_Name" )
+
+def request = context.expand( '${${"Request 1"}#Request}' )
+//log.info "request:::::"+request
+
+def response = testRunner.testCase.getTestStepByName("Request 1").getPropertyValue("response")
+//log.info response
+
+Date date = new Date();
+	def date1 = date.format('MMdd hhmm')
+
+	def folder = new File(projectPath+"\\"+serviceName+"Results_"+date1)
+	if(!folder.exists()){
+		folder.mkdirs()
+	}
+	new File(folder,context["tc_ID"]+"Req_Resp.txt").withWriterAppend{ w ->
+		w << ("Request:")
+		w <<("\r\n\n")
+		w.append(request)//appending the request in file
+		w <<("\r\n\n")
+		w <<("\r\n\n")
+		w  <<("Response:")
+		w <<("\r\n\n")
+		w.append(response )
+		
+	}
+
+
+if(!(i < context["fileSize"])){
+	
+	WritableWorkbook workbook = Workbook.createWorkbook(new File(projectPath+"\\"+serviceName+"_Output.xls"))
+	WritableSheet sheet= workbook.createSheet("Results",0)
+
+	context["data"]=context["Outputdata"].getRow(0).toString()
+	context["data"]=context["data"].split(",")
+	
+	def colCount = context["data"].size()
+
+	def rowCount = context["Outputdata"].getRows()
+	
+	for(i=0;i<colCount;i++){
+		for(j=0;j<rowCount;j++){
+			
+			Cell cell = context["Outputdata"].getCell(i,j)
+			context["cell"] = cell.getContents().toString()
+			
+			Label label = new Label(i,j,context["cell"]);
+			sheet.addCell(label);					
+		}	
+	}
+	workbook.write();
+	workbook.close();
+
+}
+else{
+	testRunner.gotoStepByName("reqConfig")
+}
+
+]]></script></con:config></con:testStep><con:properties><con:property><con:name>Environment</con:name><con:value>test</con:value></con:property><con:property><con:name>Service_Name</con:name><con:value>GetSalesAgent</con:value></con:property></con:properties></con:testCase><con:properties/></con:testSuite><con:properties/><con:wssContainer/><con:oAuth2ProfileContainer/><con:oAuth1ProfileContainer/><con:sensitiveInformation/></con:soapui-project>
